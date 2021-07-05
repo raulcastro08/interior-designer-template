@@ -31,11 +31,7 @@ const links: MenuLink[] = [
   },
 ];
 
-type MenuProps = {
-  onSignupClick: React.MouseEventHandler<HTMLButtonElement>;
-};
-
-const Menu: React.FC<MenuProps> = ({ onSignupClick }) => {
+const Menu = () => {
   return (
     <MenuWrapper.Menu>
       <MenuWrapper.LeftSide>

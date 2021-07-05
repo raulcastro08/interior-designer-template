@@ -12,7 +12,7 @@ import {
 const Footer: React.FC<DefaultFooterWrapperProps> = (props) => {
   return (
     <FooterWrapper {...props}>
-      <LeftSide>
+      <CentralSide>
         <Text
           variant="paragraph1"
           tag="h3"
@@ -23,19 +23,8 @@ const Footer: React.FC<DefaultFooterWrapperProps> = (props) => {
           }}
           fontFamily="Montserrat"
         >
-          © 2021 All Rights Reserved | Company Name
+          © 2021 Todos os direitos reservados | Company Name
         </Text>
-      </LeftSide>
-      <CentralSide>
-        <a href="https://www.alura.com.br/">
-          <FiInstagram />
-        </a>
-        <a href="https://www.alura.com.br/">
-          <FiTwitter />
-        </a>
-        <a href="https://www.alura.com.br/">
-          <FiFacebook />
-        </a>
       </CentralSide>
     </FooterWrapper>
   );

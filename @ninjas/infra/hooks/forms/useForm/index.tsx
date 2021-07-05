@@ -17,7 +17,11 @@ export const useForm = <T,>(params: UseFormParams<T>) => {
       onSubmit(values);
     },
 
-    handleChange: (e: React.FormEvent<HTMLInputElement>) => {
+    handleChange: (
+      e: React.FormEvent<
+        HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+      >
+    ) => {
       const { name, value } = e.currentTarget;
 
       setValues((currentValues) => ({
