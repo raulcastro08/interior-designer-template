@@ -34,7 +34,6 @@ const ButtonDefault = css<ButtonDefaultProps>`
   color: ${({ theme, variant }) =>
     getColor(theme.colors, variant)?.contrastText};
 `;
-
 const ButtonWrapper = styled.button<ButtonWrapperProps & ButtonDefaultProps>`
   border: 0;
   cursor: pointer;
@@ -42,6 +41,7 @@ const ButtonWrapper = styled.button<ButtonWrapperProps & ButtonDefaultProps>`
   font-family: Montserrat;
   font-weight: bold;
   opacity: 1;
+  border-radius: 30px;
 
   ${TextStyleVariantsMap.smallestException}
   ${({ ghost }) => {

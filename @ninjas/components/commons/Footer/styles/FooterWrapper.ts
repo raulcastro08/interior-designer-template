@@ -13,7 +13,7 @@ export const FooterWrapper = styled.footer<DefaultFooterWrapperProps>`
   border-radius: 4px;
   padding-right: 50px;
   padding-left: 50px;
-  background-color: #2c4251;
+  background-color: #fffa;
 `;
 export const LeftSide = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ export const LeftSide = styled.div`
   order: 1;
   ${breakpointsMedia({
     md: css`
-      width: 90%;
+      width: 100%;
       height: 100px;
     `,
   })}
@@ -36,8 +36,8 @@ export const LeftSide = styled.div`
     color: ${({ theme }) => theme.colors.primary.main.color};
     text-decoration: none;
     transition: 0.3s;
-    margin: 4px;
-    display: inline;
+    /* margin: 4px; */
+    display: flex;
     &:hover,
     &:focus {
       opacity: 0.5;
@@ -64,8 +64,8 @@ export const CentralSide = styled.div`
   list-style: none;
   display: inline;
   align-items: center;
-  justify-content: left;
-  padding-left: 30px;
+  justify-content: center;
+
   margin-top: 17px;
   a {
     color: ${({ theme }) => theme.colors.primary.main.color};
