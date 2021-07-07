@@ -98,12 +98,17 @@ function HomeScreen() {
           display={{ xs: "none", lg: "flex" }}
           z-index="-1"
         >
-          <Image
+          <Grid.Container
+            width={{ lg: "700px" }}
+            height={{ lg: "800px" }}
+            backgroundImage="url(/images/wallpaper_sofa.png)"
+          />
+          {/* <Image
             src="/images/wallpaper_sofa.png"
             alt="Picture of the author"
             width={600}
             height={700}
-          />
+          /> */}
         </Grid.Col>
       </Grid.Row>
       {/*  */}
