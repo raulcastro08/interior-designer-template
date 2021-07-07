@@ -1,21 +1,19 @@
 import React from "react";
+import { FaUserCircle } from "react-icons/fa";
 import { Logo } from "@theme/Logo";
 import Text from "../../foundation/Text";
+import { Button } from "../Button";
 import { MenuWrapper } from "./styles/MenuWrapper";
 
 type MenuLink = {
   text: string;
-  url?: string;
-  href?: string;
-  scroll?: boolean;
+  url: string;
 };
 
 const links: MenuLink[] = [
   {
     text: "Home",
-
     url: "/",
-    scroll: true,
   },
   {
     text: "Sobre",
@@ -37,7 +35,7 @@ const Menu = () => {
       <MenuWrapper.LeftSide>
         <Logo />
       </MenuWrapper.LeftSide>
-      <MenuWrapper.CentralSide>
+      {/* <MenuWrapper.CentralSide>
         {links.map((link) => (
           <li key={link.url}>
             <Text variant="smallestException" tag="a" href={link.url}>
@@ -45,8 +43,16 @@ const Menu = () => {
             </Text>
           </li>
         ))}
-      </MenuWrapper.CentralSide>
-      <MenuWrapper.RightSide />
+      </MenuWrapper.CentralSide> */}
+      <MenuWrapper.RightSide>
+        {links.map((link) => (
+          <li key={link.url}>
+            <Text variant="smallestException" tag="a" href={link.url}>
+              {link.text}
+            </Text>
+          </li>
+        ))}
+      </MenuWrapper.RightSide>
     </MenuWrapper.Menu>
   );
 };

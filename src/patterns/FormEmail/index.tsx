@@ -63,7 +63,7 @@ function FormEmail() {
           xs: "0 auto",
           md: "initial",
         }}
-        fullWidth
+        // fullWidth
       >
         Enviar
       </Button>
