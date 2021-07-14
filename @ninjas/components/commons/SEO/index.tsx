@@ -7,7 +7,7 @@ export type SEOProps = {
 
 const SEO: React.FC<SEOProps> = ({ headTitle }) => {
   const hasHeadTitle = Boolean(headTitle);
-  const baseTitle = "Template Pessoal";
+  const baseTitle = "Design de Interiores";
   const title = hasHeadTitle ? `${headTitle} | ${baseTitle}` : baseTitle;
 
   const description = "Tenha seu site de maneira prática e sem dor de cabeça";
