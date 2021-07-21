@@ -284,7 +284,10 @@ const servicesScreeen = () => {
           paddingLeft={{ lg: "200px" }}
           display="block"
         >
-          <Grid.Container marginTop={{ lg: "90px" }}>
+          <Grid.Container
+            marginTop={{ lg: "90px" }}
+            paddingLeft={{ lg: "150px" }}
+          >
             <Text
               variant="paragraph1"
               tag="h1"
@@ -418,8 +421,7 @@ const servicesScreeen = () => {
               marginBottom={{ lg: "50px" }}
               fontFamily="Montserrat"
             >
-              Uma vez que todos os detalhes estiverem pronto vamos por a mão na
-              massa{" "}
+              Quando todos os detalhes estiverem pronto vamos por a mão na massa{" "}
             </Text>
             <Text
               variant="paragraph1"

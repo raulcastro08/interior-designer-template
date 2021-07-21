@@ -57,7 +57,7 @@ function FormEmail() {
 
       <Button
         tag="button"
-        type="submit"
+        type="button"
         variant="primary.main"
         margin={{
           xs: "0 auto",

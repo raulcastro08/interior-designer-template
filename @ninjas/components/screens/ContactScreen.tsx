@@ -124,11 +124,13 @@ const contactScreen = () => {
                 md: "left",
               }}
               marginTop="0"
-              marginBottom={{ lg: "50px" }}
+              marginBottom={{ xs: "20px", lg: "50px" }}
               fontFamily="Montserrat"
             >
               Preencha com seus dados e entraremos em contato
             </Text>
+          </Grid.Container>
+          <Grid.Container width={{ xs: "400px", lg: "600px" }}>
             <FormEmail />
           </Grid.Container>
         </Grid.Col>
