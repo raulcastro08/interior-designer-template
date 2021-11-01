@@ -15,7 +15,7 @@
     "@commitlint/config-conventional": "^12.0.1",
     "@crello/react-lottie": "^0.0.11",
     "csstype": "^3.0.8",
-    "framer-motion": "^3.10.0",
+    "framer-motion": "^5.0.1",
     "lodash": "^4.17.20",
     "next": "latest",
     "nookies": "^2.5.2",
